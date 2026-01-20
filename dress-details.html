@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dress Details</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html"><span class="logo">sakyra</span></a>
+
+        <ul class="nav-item">
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Jewellery</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Bags</a></li>
+        </ul>
+
+        <div class="search">
+            <img src="images/search_icon.svg" height="30px" alt="">
+            <input class="search-input" type="text" placeholder="Search for products, brands & more">
+        </div>
+
+        <div class="container">
+            <div class="profile">
+                 <img src="images/profile.svg" height="45" alt="">
+            </div>
+
+            <div class="wishlist">
+                <!-- Heart icon without built-in counter -->
+                <img src="images/heart.svg" height="45" alt="">
+                <p class="wishlist-count" id="wishlist-count">0</p>
+            </div>
+
+            <div class="container-item">
+                <img src="images/bag-icon.svg" height="45" alt="">
+                <p class="bag-count">0</p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="dress-details-container">
+        
+
+            <div class="breadcrumb" id="breadcrumb"></div>
+
+            <div class="dress-detail" id="dress-details">
+
+            </div>
+    </section>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlist-modal" class="wishlist-modal">
+        <div class="wishlist-modal-overlay" id="wishlist-overlay"></div>
+        <div class="wishlist-modal-content">
+            <div class="wishlist-header">
+                <h2>My Wishlist</h2>
+                <button class="close-wishlist" id="close-wishlist">&times;</button>
+            </div>
+            <div class="wishlist-items-container" id="wishlist-items-container">
+                <!-- Wishlist items will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Bag Modal -->
+    <div id="bag-modal" class="bag-modal">
+        <div class="bag-modal-overlay" id="bag-overlay"></div>
+        <div class="bag-modal-content">
+            <div class="bag-header">
+                <button class="back-btn" id="close-bag">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <h2>Shopping Bag</h2>
+            </div>
+            
+            <div class="bag-items-container" id="bag-items-container">
+                <!-- Bag items will be dynamically inserted here -->
+            </div>
+
+            <div class="bag-checkout-section">
+                <div class="bag-subtotal">
+                    <span>Subtotal</span>
+                    <span id="bag-subtotal">₹0.00</span>
+                </div>
+                <p class="bag-shipping-note">Sub-total (Exclusive of shipping charges and discounts)</p>
+                <button class="bag-checkout-btn" id="bag-checkout-btn">CHECK OUT</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

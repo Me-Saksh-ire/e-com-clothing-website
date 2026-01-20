@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sakyra</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><span class="logo">sakyra</span></a>
+
+        <ul class="nav-item">
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Jewellery</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Bags</a></li>
+        </ul>
+
+        <div class="search">
+            <img src="images/search_icon.svg" height="30px" alt="">
+            <input class="search-input" type="text" placeholder="Search for products, brands & more">
+        </div>
+
+        <div class="container">
+            <div class="profile">
+                <img src="images/profile.svg" height="45" alt="">
+            </div>
+
+            <div class="wishlist" id="wishlist-trigger">
+                <!-- Heart icon without built-in counter -->
+                <img src="images/heart.svg" height="45" alt="">
+                <p class="wishlist-count" id="wishlist-count">0</p>
+            </div>
+
+            <div class="container-item">
+                <img src="images/bag-icon.svg" height="45" alt="">
+                <p class="bag-count">0</p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="services">
+
+            <img class="icons" src="images/package-replacement-icon.svg" height="70" alt="">
+            <div class="text">
+                <h1>Easy Returns</h1>
+                <p>Free pick up</p>
+            </div>
+
+
+            <div class="service-img">
+                <img class="icons" src="images/flash-thunder-outline-icon.svg" height="70" alt="">
+                <div class="text">
+                    <h1>Fast Delivery</h1>
+                    <p>4000+ styles</p>
+                </div>
+            </div>
+
+            <div class="service-img">
+                <img class="icons" src="images/free-delivery-icon.svg" height="70" alt="">
+                <div class="text">
+                    <h1>Free Shipping</h1>
+                    <p>For orders 990+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="banner">
+                <img src="images/model.png" alt="">
+
+                <div class="banner-text ">
+                    <h2>- Up To 70% Off -</h2>
+                    <h3>Flash Sale</h3>
+
+                    <button>Don't Miss Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-page">
+
+        <h2>Therapy helps you understand your moods. We help you dress for them.</h2>
+        <h1>Women's Collection</h1>
+
+        <div class="grp-of-items">
+            <div class="single-items">
+                <a href="dress.html">
+                    <img src="images/dress.webp" alt="">
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="trouser.html">
+                    <img src="images/trouser.webp" alt="">
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="tops.html">
+                    <img src="images/tops.webp" alt="">
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="coords.html">
+                    <img src="images/coords.webp" alt="">
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="footwear.html">
+                    <img src="images/footwear.webp" alt="">
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="skirts.html">
+                    <img src="images/skirts.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-page">
+        <h1>Men's Collection</h1>
+
+        <div class="grp-of-items">
+            <div class="single-items">
+                <a href="#">
+                    <img src="images/shirt.jpg" height="280" alt="">
+                    <p>Shirts</p>
+                </a>
+
+            </div>
+
+            <div class="single-items">
+                <a href="">
+                    <img src="images/t-shirt.webp" height="280" alt="">
+                    <p>T-Shirts</p>
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="">
+                    <img src="images/jeans.webp" height="300" alt="">
+                    <h3 class="jeans">Jeans</h3>
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="">
+                    <img src="images/shorts.webp" height="280" alt="">
+                    <p>Shorts</p>
+                </a>
+            </div>
+
+            <div class="single-items">
+                <a href="">
+                    <img src="images/shoes.avif" height="280" alt="">
+                    <p>Shoes</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlist-modal" class="wishlist-modal">
+        <div class="wishlist-modal-overlay" id="wishlist-overlay"></div>
+        <div class="wishlist-modal-content">
+            <div class="wishlist-header">
+                <h2>My Wishlist</h2>
+                <button class="close-wishlist" id="close-wishlist">&times;</button>
+            </div>
+            <div class="wishlist-items-container" id="wishlist-items-container">
+                <!-- Wishlist items will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Bag Modal -->
+    <div id="bag-modal" class="bag-modal">
+        <div class="bag-modal-overlay" id="bag-overlay"></div>
+        <div class="bag-modal-content">
+            <div class="bag-header">
+                <button class="back-btn" id="close-bag">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <h2>Shopping Bag</h2>
+            </div>
+
+            <div class="bag-items-container" id="bag-items-container">
+                <!-- Bag items will be dynamically inserted here -->
+            </div>
+
+            <div class="bag-checkout-section">
+                <div class="bag-subtotal">
+                    <span>Subtotal</span>
+                    <span id="bag-subtotal">₹0.00</span>
+                </div>
+                <p class="bag-shipping-note">Sub-total (Exclusive of shipping charges and discounts)</p>
+                <button class="bag-checkout-btn" id="bag-checkout-btn">CHECK OUT</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left-side">
+                <a href="index.html"><span class="logo2">sakyra</span></a>
+
+                <div class="left-side-sm">
+                    <button class="social-media">
+                        <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </button>
+
+                    <button class="social-media">
+                        <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" />
+                        </svg>
+                    </button>
+
+                    <button class="social-media">
+                        <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <rect x="2" y="6" width="20" height="12" rx="4" ry="4" />
+                            <polygon points="10 9 16 12 10 15 10 9" />
+                        </svg>
+                    </button>
+
+                    <button class="social-media">
+                        <svg width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 12 8v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="middle-side">
+                <h1 class="shop">
+                    Shop
+                </h1>
+
+                <!-- <hr style="color: #e69e40; "> -->
+
+                <div class="footer-nav">
+                    <ul class="footer-nav-item">
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Jewellery</a></li>
+
+                    </ul>
+                    <ul class="footer-nav-item">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h1 class="support">
+                    Support
+                </h1>
+                <div class="footer-nav">
+                    <ul class="footer-nav-item">
+                        <li><a href="#">Return & Exchange Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                    <ul class="footer-nav-item">
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <p>&copy; 2026 sakyra. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
